@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.button1 = new System.Windows.Forms.Button();
             this.txtcr = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.txtcurrent = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblstatus = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -116,11 +118,21 @@
             this.lblstatus.Size = new System.Drawing.Size(0, 13);
             this.lblstatus.TabIndex = 7;
             // 
-            // Form1
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(245, 250);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Owned By DiyRex :)";
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 269);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.lblstatus);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtcurrent);
@@ -129,8 +141,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtcr);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "MainForm";
+            this.Text = "Car Mechanic Simulator 2021 CR Editor";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -147,6 +160,7 @@
         private System.Windows.Forms.Label txtcurrent;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblstatus;
+        private System.Windows.Forms.Label label5;
     }
 }
 
